@@ -1,0 +1,41 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2012.09SP1.22498
+
+# File Generated:     May 1 2013 11:36:30
+
+# Family & Device:    iCE40HX1K
+
+# Package:            TQ144
+
+# ##############################################################################
+
+set_io INPUT_CLOCK 21
+
+set_io LED1 99
+set_io LED2 98
+set_io LED3 97
+set_io LED4 96
+set_io LED5 95
+
+# Serial
+set_io SERIAL_RX 9
+set_io SERIAL_TX 8
+
+
+# PMOD connector
+
+set_io PMOD_1 78  # PIO1_02
+set_io PMOD_2 79  # PIO1_03
+set_io PMOD_3 80  # PIO1_04
+set_io PMOD_4 81  # PIO1_05
+# 5 = ground
+# 6 = 3.3V
+set_io PMOD_7 87  # PIO1_06
+set_io PMOD_8 88  # PIO1_07
+set_io PMOD_9 90  # PIO1_08
+set_io PMOD_10 91 # PIO1_09
+# 11 = ground
+# 12 = 3.3V
