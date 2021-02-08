@@ -2,6 +2,12 @@
 
 This project contains code to turn an iCEStick FPGA development board into a reasonable logic analyser that is compatible with Sigrok / PulseView. Communication is via RS232 which can run at up to 921600 Baud. Fairly slow, but RLE can be used to improve the transfer rate. In any case, continuous mode is not supported by SUMP.
 
+## Status
+
+I mostly did this as a learning project. I got pretty far. It works, except for one bug where every other capture doesn't work for some reason. I have stopped working on it though for two reasons:
+
+1. The OLS/SUMP protocol assumes a clock of 100 MHz which you can't achieve with the iCEStick dev board (closest you can get is 100.5 MHz). That kind of sucks.
+2. You can get really cheap Salaea Logic clones that work really well. They're exactly the same as the official Salaea Logic which costs £300, but the one I bought only cost £9. They have a lower sample rate (only 24 MHz) but support continuous capture, which was much better for the use case I had in mind (capturing HDMI DDC/CI signals).
 
 ## Misc
 
